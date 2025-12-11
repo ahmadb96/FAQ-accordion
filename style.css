@@ -1,0 +1,63 @@
+
+body{
+    margin: 0;
+     background-color: hsl(275, 100%, 97%);
+}
+
+/* فونت پروژه */
+@font-face {
+    font-family: 'WorkSans-Bold';
+    src: url('/fonts/WorkSans-Bold.ttf') ,format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'WorkSans-Regular';
+    src: url('/fonts/WorkSans-Regular.ttf') ,format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* پس زمینه */
+main{
+    width: 100%;
+    height: 100vh;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    height: 30%;
+    background: url(/images/background-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+/* ==================== باکس اصلی سوالات ================== */
+
+.faq-header h1{
+    font-family: 'WorkSans-Bold';
+    font-size: 3rem;
+}
+
+/* کانتینر اصلی سوالات متداول */
+.faq-container{
+    background-color: hsl(0, 100%, 100%);
+    max-width: 500px;
+    margin-top: -80px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* باکس سوالات */
+.faq-question{
+     display: flex;
+     justify-content: space-between;
+}
