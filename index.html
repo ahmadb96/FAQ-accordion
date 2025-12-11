@@ -3,47 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
-    <title>Document</title>
+    <link rel="icon" type="image/png" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./style.css">
+    <title>FAQ Accordion</title>
 </head>
 <body>
-    <main>
-        <!-- قسمت بالایی با پس زمینه -->
-        <div class="header">
-        </div>
+    <main class="page">
+        <section class="faq-card" aria-label="Frequently Asked Questions">
+            <header class="faq-header">
+                <img src="./images/icon-star.svg" alt="">
+                <h1>FAQs</h1>
+            </header>
 
-        <div class="footer">
-
-            <!-- بدنه اصلی باکس سوالات -->
-            <div class="faq-container">
-                <div class="faq-header">
-                    <img src="/images/icon-star.svg" alt="">
-                    <h1>F&Qs</h1>
-                </div>
-
-                <!-- آیتم های داخل باکس سوالات -->
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <a href="#"><p>What is Frontend Mentor, and how will it help me?</p></a>
-                        <button>
-                            <img src="/images/icon-plus.svg" alt="">
-                        </button>
+            <div class="faq-list">
+                <article class="faq-item active">
+                    <button class="faq-question" aria-expanded="true">
+                        <span>What is Frontend Mentor, and how will it help me?</span>
+                        <img class="faq-icon" src="./images/icon-minus.svg" alt="">
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            Frontend Mentor offers realistic coding challenges to help developers improve
+                            their frontend coding skills with projects in HTML, CSS, and JavaScript. It's
+                            suitable for all levels and ideal for portfolio building.
+                        </p>
                     </div>
-                    <div class="faq-aswer">
-                        <p>Frontend Mentor offers realistic coding challenges to help
-                            developers improve their frontend coding skills with projects in
-                            HTML, CSS, and JavaScript. It's suitable for all levels and ideal for
-                            portfolio building.</p>
+                </article>
+
+                <article class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Is Frontend Mentor free?</span>
+                        <img class="faq-icon" src="./images/icon-plus.svg" alt="">
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            Yes, Frontend Mentor offers a range of free challenges. You can choose to upgrade
+                            for access to premium projects that include more advanced designs and assets.
+                        </p>
                     </div>
-                </div>
-               
-                
+                </article>
+
+                <article class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Can I use Frontend Mentor projects in my portfolio?</span>
+                        <img class="faq-icon" src="./images/icon-plus.svg" alt="">
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            Absolutely! Completing challenges is a great way to build a portfolio. Just be sure
+                            to credit Frontend Mentor for the design inspiration when showcasing your work.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>How can I get help if I'm stuck on a challenge?</span>
+                        <img class="faq-icon" src="./images/icon-plus.svg" alt="">
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            You can ask questions and share your progress in the Frontend Mentor community
+                            forum or Discord server. Fellow developers are usually happy to provide tips and
+                            feedback.
+                        </p>
+                    </div>
+                </article>
             </div>
-
-        </div>
+        </section>
     </main>
 
-
-    <script src="/script.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
